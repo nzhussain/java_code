@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Switch1 {
     public static void main(String args[]){
-        int button;
+       int button;
         System.out.println("click the button");
         Scanner obj = new Scanner(System.in);
         button=obj.nextInt();
