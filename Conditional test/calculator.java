@@ -1,8 +1,9 @@
 import java.util.Scanner;
 public class calculator {
     public static void main(String args[]){
+        System.out.println("enter the operator");
          Scanner obj=new Scanner(System.in);
-       
+          
         int input;
         String operator;
         
@@ -36,29 +37,54 @@ public class calculator {
             default:System.out.println("invalid");   
             }
         }while(input==1);
-   
+            
+         /* <<<<---calculator code through the switch--->>>>
 
-        // System.out.println("Enter the number");
-        //  Scanner obj=new Scanner(System.in);
-        // String operator=obj.nextLine();
-        // System.out.println("Enter the value of a:");
-        // double a = obj.nextDouble();
-        // System.out.println("Enter the value of b:");
-        // double b = obj.nextDouble();
+        System.out.println("Enter the number");
+         Scanner obj=new Scanner(System.in);
+        String operator=obj.nextLine();
+        System.out.println("Enter the value of a:");
+        double a = obj.nextDouble();
+        System.out.println("Enter the value of b:");
+        double b = obj.nextDouble();
 
-        // switch(operator){
-        //     case "+":System.out.println("addition is :"+(a+b));
-        //     break;
-        //     case "-":System.out.println("subtraction is :"+(a-b));
-        //     break;
-        //     case "*":System.out.println("multiplication is :"+(a*b));
-        //     break;
-        //     case "/":System.out.println("divition is :"+(a/b));
-        //     break;
-        //     case "%":System.out.println("modulation is :"+(a%b));
-        //     break;
-        //     default:System.out.println("invalid");
-        // }
+        switch(operator){
+            case "+":System.out.println("addition is :"+(a+b));
+            break;
+            case "-":System.out.println("subtraction is :"+(a-b));
+            break;
+            case "*":System.out.println("multiplication is :"+(a*b));
+            break;
+            case "/":System.out.println("divition is :"+(a/b));
+            break;
+            case "%":System.out.println("modulation is :"+(a%b));
+            break;
+            default:System.out.println("invalid");
+        } */
+         
+       /*  <<<<--calculator through the if-statements-->>>>
+
+        String op=obj.next();
+       // char op=obj.next().charAt(0);
+        System.out.println("Enter the value of a:");
+        double a = obj.nextDouble();
+        System.out.println("Enter the value of b:");
+        double b = obj.nextDouble();
+        
+       double result=0;
+       if(op.equals("+")){
+        System.out.println(result=(a+b));
+       }else if(op.equals("-")){
+        System.out.println(result=(a-b));
+       }else if(op.equals("*")){
+        System.out.println(result=(a*b));
+       }else if(op.equals("/")){
+        System.out.println(result=(a/b));
+       }else if(op.equals("%")){
+        System.out.println(result=(a%b));
+       }else{
+        System.out.println("invalid");
+       } */
     }
     
 }
